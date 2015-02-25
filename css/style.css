@@ -5,6 +5,23 @@
   height: 500px;
 }
 
+.tt{
+	background-color: white;
+	font-size: 13px;
+	border: 1px solid black;
+	position: absolute;
+}
+
+.tt .date {
+	font-size: 13px;
+	color:#999;
+	text-transform: uppercase;
+}
+
+.tt .val{
+	font-size: 18px;
+	font-weight: bold;
+}
 body {
   font: 10px sans-serif;
 }
