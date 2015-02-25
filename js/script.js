@@ -85,8 +85,24 @@ d3.json("js/data.json", function(error, data) {
 "<div class='val'>"+d.unemployment_rate+"</div>"
 
 		);
+	$(".tt").show();
+})
+.on("mouseout", function(d){
+	$(".tt").hide();
 })
 
+.on("mousemove", function(d){
+	var pos = d3.mouse(this);
+
+	var left = pos[0] + margin.left+ 15 - $(".tt").width() -10;
+	var top = pos[1] + margin.top - $(".tt").height() - 10;
+
+$(".tt").css({
+	"left" : left + "px",  
+	"top" : top + "px"
+})
+
+})
 
 
 });

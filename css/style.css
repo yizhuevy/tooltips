@@ -10,6 +10,7 @@
 	font-size: 13px;
 	border: 1px solid black;
 	position: absolute;
+	display:none;
 }
 
 .tt .date {
